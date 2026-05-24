@@ -158,7 +158,7 @@ pwa:
 paginate: 15
 
 # The base URL of your site
-baseurl: "/regotto15138-stack"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
