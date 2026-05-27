@@ -1,0 +1,129 @@
+<mxfile host="Electron">
+  <diagram name="第 1 页" id="sUEfYkx2c2Kn1HyRPNWU">
+    <mxGraphModel dx="1413" dy="1031" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EVyi6bE8nqKALBO42YbT-71" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="EVyi6bE8nqKALBO42YbT-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-3" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EVyi6bE8nqKALBO42YbT-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-5" connectable="0" parent="J-nGB36OlAPo_LV7gTnQ-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="授予primary(根据网络等信息选择), 刷新master chunk信息" vertex="1">
+          <mxGeometry relative="1" x="-0.1632" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-75" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;Master:&lt;/div&gt;文件映射关系(chunk_id~chunk_server)&lt;div&gt;primary, 其余节点状态&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="135" x="62.5" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-76" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-83" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="EVyi6bE8nqKALBO42YbT-95">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="672" y="897.5" as="sourcePoint" />
+            <mxPoint x="847" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-79" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="EVyi6bE8nqKALBO42YbT-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-12" connectable="0" parent="EVyi6bE8nqKALBO42YbT-79" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="与primary交互失败" vertex="1">
+          <mxGeometry relative="1" x="-0.4232" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-81" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-83" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;dashed=1;" target="EVyi6bE8nqKALBO42YbT-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-82" connectable="0" parent="EVyi6bE8nqKALBO42YbT-81" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="0.4126" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-1" connectable="0" parent="EVyi6bE8nqKALBO42YbT-81" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="❌️" vertex="1">
+          <mxGeometry relative="1" x="-0.348" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-83" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(primary)" vertex="1">
+          <mxGeometry height="50" width="155" x="465" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-84" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="EVyi6bE8nqKALBO42YbT-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-90" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="EVyi6bE8nqKALBO42YbT-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-14" connectable="0" parent="EVyi6bE8nqKALBO42YbT-90" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="与secondary交互失败" vertex="1">
+          <mxGeometry relative="1" x="0.5785" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-9" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="EVyi6bE8nqKALBO42YbT-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-92" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;Client:&lt;/div&gt;write(data)&lt;div&gt;read(chunk id)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="135" x="62.5" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-93" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-95" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="EVyi6bE8nqKALBO42YbT-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-94" connectable="0" parent="EVyi6bE8nqKALBO42YbT-93" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="-0.2252" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-95" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(primary)" vertex="1">
+          <mxGeometry height="50" width="155" x="700" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-96" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-98" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="EVyi6bE8nqKALBO42YbT-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-97" connectable="0" parent="EVyi6bE8nqKALBO42YbT-96" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="-0.2464" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-98" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(secondary)" vertex="1">
+          <mxGeometry height="50" width="155" x="790" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-99" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EVyi6bE8nqKALBO42YbT-95">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="976" y="570" />
+              <mxPoint x="777" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-11" connectable="0" parent="EVyi6bE8nqKALBO42YbT-99" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="与secondary交互失败, master标记隔离当前节点, 重启修复secondary" vertex="1">
+          <mxGeometry relative="1" x="-0.0868" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-101" edge="1" parent="1" source="EVyi6bE8nqKALBO42YbT-103" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="EVyi6bE8nqKALBO42YbT-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-102" connectable="0" parent="EVyi6bE8nqKALBO42YbT-101" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="0.0492" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-103" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(secondary)" vertex="1">
+          <mxGeometry height="50" width="155" x="860" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="EVyi6bE8nqKALBO42YbT-104" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&amp;nbsp;宕机/超时(master与primary secondary都存在 heartbeat)&lt;br&gt;&amp;nbsp;&amp;nbsp;1.master与primary交互超时: master重新选primary, primary本身停止提供操作&lt;br&gt;&amp;nbsp;&amp;nbsp;2.master与secondary交互超时: 标记secondary, 并将client读请求转发至其他节点, 从其他secondary中获取数据生成新的secondary&lt;br&gt;&amp;nbsp;&amp;nbsp;3.client与primary secondary交互超时: 将操作重新执行(需要做防重幂等)&lt;br&gt;&amp;nbsp;&amp;nbsp;3.primary与secondary交互超时: 标记secondary失效, master进行修复&lt;br&gt;&amp;nbsp;&amp;nbsp;4.master宕机: 根据operation_log, check_point重启&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="710" x="10" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;❌️&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="512.5" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;❌️&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="945" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="J-nGB36OlAPo_LV7gTnQ-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;❌️&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="945" y="920" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

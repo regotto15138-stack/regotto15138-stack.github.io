@@ -2,7 +2,7 @@
 title: "分布式理论基础"
 description: "深入解析金融分布式系统中分布式事务的设计方案，对比 2PC、TCC、Saga 在支付场景中的选型与实现。"
 date: 2026-05-24 10:00:00 +0800
-categories: [Tech]
+categories: [distributed]
 tags: [distributed-systems, consensus, payment, high-availability]
 author: regotto
 #image:

@@ -1,0 +1,155 @@
+<mxfile host="Electron">
+  <diagram name="第 1 页" id="85Vn81ruHnUIl46TBFIs">
+    <mxGraphModel dx="1201" dy="876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-1" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="Y-uXDfJqssIIV8jMqtMS-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-2" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="write 2.响应primary, replica&lt;div&gt;read 2.响应chunk server&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2079" y="2" as="geometry">
+            <mxPoint x="-2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-3" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Y-uXDfJqssIIV8jMqtMS-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="872.5" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-4" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="0.授予primary(根据网络等信息选择)" vertex="1">
+          <mxGeometry relative="1" x="-0.3082" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;Master:&lt;/div&gt;文件映射关系(chunk_id~chunk_server)&lt;div&gt;primary, 其余节点状态&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="135" x="480" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-6" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Y-uXDfJqssIIV8jMqtMS-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1089.5" y="607.5" as="sourcePoint" />
+            <mxPoint x="1264.5" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-7" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5.发送数据至副本" vertex="1">
+          <mxGeometry relative="1" x="-0.3344" y="3" as="geometry">
+            <mxPoint x="11" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-8" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="8.通知副本,执行写入" vertex="1">
+          <mxGeometry relative="1" x="-0.1461" y="1" as="geometry">
+            <mxPoint x="-1" y="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-9" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="Y-uXDfJqssIIV8jMqtMS-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-10" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="10.ack 写入成功" vertex="1">
+          <mxGeometry relative="1" x="-0.5582" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-11" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;dashed=1;" target="Y-uXDfJqssIIV8jMqtMS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-12" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="0.4126" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(primary)&lt;div&gt;4.数据暂存缓冲区&lt;/div&gt;&lt;div&gt;7.分配写入序号&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="155" x="882.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-14" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="Y-uXDfJqssIIV8jMqtMS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-15" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="write 1.get primary&lt;div&gt;read 1.get chunk&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1011" y="-1" as="geometry">
+            <mxPoint y="-24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-16" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="Y-uXDfJqssIIV8jMqtMS-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="767.5" y="775" />
+              <mxPoint x="767.5" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-17" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="6.发送commit" vertex="1">
+          <mxGeometry relative="1" x="-0.1206" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-18" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Y-uXDfJqssIIV8jMqtMS-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="717.5" y="758" />
+              <mxPoint x="717.5" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-19" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3.write data" vertex="1">
+          <mxGeometry relative="1" x="-0.042" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-20" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="Y-uXDfJqssIIV8jMqtMS-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-21" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="read 3.到对应chunk上获取数据" vertex="1">
+          <mxGeometry relative="1" x="-0.2393" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;Client:&lt;/div&gt;write(data)&lt;div&gt;read(chunk id)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="135" x="480" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-23" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="Y-uXDfJqssIIV8jMqtMS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-24" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="-0.2252" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(secondary)" vertex="1">
+          <mxGeometry height="50" width="155" x="1137.5" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-26" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="Y-uXDfJqssIIV8jMqtMS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-27" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="-0.2464" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(secondary)" vertex="1">
+          <mxGeometry height="50" width="155" x="1157.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-29" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="Y-uXDfJqssIIV8jMqtMS-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-30" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="9.写入成功" vertex="1">
+          <mxGeometry relative="1" x="0.1345" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-31" edge="1" parent="1" source="Y-uXDfJqssIIV8jMqtMS-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="Y-uXDfJqssIIV8jMqtMS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-32" connectable="0" parent="Y-uXDfJqssIIV8jMqtMS-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="hearbeat" vertex="1">
+          <mxGeometry relative="1" x="0.0492" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="A-chunk server(secondary)" vertex="1">
+          <mxGeometry height="50" width="155" x="1197.5" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Y-uXDfJqssIIV8jMqtMS-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="正常流程" vertex="1">
+          <mxGeometry height="30" width="60" x="517.5" y="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
